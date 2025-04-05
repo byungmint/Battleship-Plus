@@ -1,4 +1,4 @@
-# Battleship Mayhem
+# Battleship Plus - CPSC 210 Project
 
 ## By Byung Min Jung
 
@@ -45,7 +45,7 @@ The robust class is ShipPlacement (methods: checkValidPlacement(), isConsecutive
 again in Board (method: tryAddingShip()), and caught in Game (method: goThroughAddingExceptions()).
 
 # Phase 4 Task 3:
-Problems:
+Problems and Fixes:
 - AllBoards in Game was public to allow access to it in GameRenderer, increasing coupling between GameRenderer and Game.
 This was fixed by making the appropriate getters and setters in the class Game, and making AllBoards private.
 - GameRenderer was responsible for both initializing all objects for it to render and keep updating it, which reduced
